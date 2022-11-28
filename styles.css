@@ -1,3 +1,4 @@
+
 body{
     background-color: #3392FF;
     display: flex;
@@ -9,4 +10,19 @@ body{
     width: 250px;
     height: 400px;
     border-radius: 5px;
+}
+.image{
+    width: 247px;
+    height: 350px;
+border: hidden;
+border-radius: 6px;
+padding-left: 2px;
+padding-top: 2PX;
+}
+.nav{
+    display: flex;
+    font-weight:bold;
+    justify-content: space-around;
+   justify-content: column;
+
 }
