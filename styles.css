@@ -23,7 +23,10 @@ padding-top: 2PX;
     display: flex;
        justify-content: space-around;
        flex-direction:row;
-padding-top: 4px;
-align-self: center;
 
+padding-bottom: 2px;
+align-self: center;
+background-color:lightcoral    ;
+color: rgba(255, 255, 255, 0.918);
+border-radius: 5px;
 }
