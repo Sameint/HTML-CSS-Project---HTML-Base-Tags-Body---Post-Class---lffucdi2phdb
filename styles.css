@@ -13,7 +13,7 @@ body{
 }
 .image{
     width: 247px;
-    height: 350px;
+    height: 355px;
 border: hidden;
 border-radius: 6px;
 padding-left: 2px;
@@ -21,8 +21,13 @@ padding-top: 2PX;
 }
 .nav{
     display: flex;
-    font-weight:bold;
-    justify-content: space-around;
-   justify-content: column;
+       justify-content: space-around;
+       flex-direction:row;
+padding-top: 4px;
+align-self: center;
 
+}
+
+#ab{
+    padding-left: 35px;  
 }
