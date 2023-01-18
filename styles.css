@@ -1,32 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 
-body{
-    background-color: #3392FF;
-    display: flex;
-    justify-content: center;
-    padding-top: 80px;
+* {
+  box-sizing: border-box;
 }
-.main{
-    background-color: #ffff;
-    width: 250px;
-    height: 400px;
-    border-radius: 5px;
-}
-.image{
-    width: 247px;
-    height: 355px;
-border: hidden;
-border-radius: 6px;
-padding-left: 2px;
-padding-top: 2PX;
-}
-.nav{
-    display: flex;
-       justify-content: space-around;
-       flex-direction:row;
 
-padding-bottom: 2px;
-align-self: center;
-background-color:lightcoral    ;
-color: rgba(255, 255, 255, 0.918);
-border-radius: 5px;
+body {
+  background-color: #222457;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.phone {
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #eee;
+  border-radius: 15px;
+  height: 600px;
+  width: 340px;
+}
+
+.phone .content {
+  opacity: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100% - 60px);
+  width: 100%;
+  transition: opacity 0.4s ease;
+}
+
+.phone .content.show {
+  opacity: 1;
+}
+
+nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-top: -5px;
+  width: 100%;
+}
+
+nav ul {
+  background-color: #fff;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 60px;
+}
+
+nav li {
+  color: #6461a2;
+  cursor: pointer;
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul li p {
+  font-size: 12px;
+  margin: 2px 0;
+}
+
+nav ul li:hover,
+nav ul li.active {
+  color: #222457;
 }
